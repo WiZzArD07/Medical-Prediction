@@ -1,8 +1,8 @@
 import streamlit as st
 import pandas as pd
-import joblib
+from keras.models import load_model
 
-model = joblib.load("random_forest_model.pkl")
+model = load_model('neural_network_prediction_Model.keras')
 
 
 
